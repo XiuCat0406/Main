@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Login</title>
+		<style>
+			body{
+				background-size: cover; 
+				background-attachment: fixed;
+			}
+			#user{
+				position: absolute;
+				top: 50px;
+				left: 900px;
+				font-size: 50px;
+				color: rgb(0,150,150);
+				text-shadow: 0px 0px 50px lightblue;
+				transition: all 0.5s;
+			}#username{
+				position: absolute;
+				top: 160px;
+				left: 740px;
+				width: 450px;
+				height: 50px;
+				border-color: cyan;
+				box-shadow: 0px 0px 10px cyan;
+				border-radius: 600px;
+				font-size: 40px;
+				background-color: rgba(0,100,100,0.75);
+				color: lightblue;
+				transition: all 0.5s;
+			}#pass{
+				position: absolute;
+				top: 190px;
+				left: 920px;
+				font-size: 50px;
+				color: rgb(0,150,150);
+				text-shadow: 0px 0px 50px lightblue;
+				transition: all 0.5s;
+			}#password{
+				position: absolute;
+				top: 300px;
+				left: 740px;
+				width: 450px;
+				height: 50px;
+				border-color: cyan;
+				box-shadow: 0px 0px 10px cyan;
+				border-radius: 600px;
+				font-size: 40px;
+				background-color: rgba(0,100,100,0.75);
+				color: lightblue;
+				transition: all 0.5s;
+			}#login{
+				position: absolute;
+				top: 390px;
+				left: 850px;
+				width: 225px;
+				height: 50px;
+				border-color: darkcyan;
+				border-radius: 600px;
+				font-size: 40px;
+				background-color: rgba(0, 50, 50, 1);
+				color: darkcyan;
+				transition: all 0.5s;
+			}#login:hover{
+				background-color: rgba(0,150,150,1);
+				border-color: cyan;
+				color: lightblue;
+				box-shadow: 0px 0px 50px cyan;
+			}
+		</style>
+	</head>
+	<body background="background.png">
+		<h1 id="user">用户名</h1>
+		<input type="text" id="username"></input>
+		<h1 id="pass">密码</h1>
+		<input type="password" id="password"></input>
+		<button id="login">登录</button>
+	</body>
+</html>
