@@ -5,7 +5,7 @@ int f[60][262150],n,a[262150],ans;
 
 int main(){
     cin>>n;
-    for(int i=1;i<=n;i++) cain>>a[i];
+    for(int i=1;i<=n;i++) cin>>a[i];
     for(int k=1;k<=58;k++){
         for(int j=1;j<=n;j++){
             if(k == a[j]) f[k][j] = j;
