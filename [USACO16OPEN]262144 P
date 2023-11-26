@@ -1,0 +1,19 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int f[60][262150],n,a[262150],ans;
+
+int main(){
+    cin>>n;
+    for(int i=1;i<=n;i++) cain>>a[i];
+    for(int k=1;k<=58;k++){
+        for(int j=1;j<=n;j++){
+            if(k == a[j]) f[k][j] = j;
+            else if(k<a[j]) f[k][j]=0;
+            else if(f[k-1][j]>0) f[k][j]=f[k-1][f[k-1][j]+1];
+            if(f[k][j]>0) ans=k;
+        }
+    }
+    cout<<ans<<endl;
+    return 0;
+}
